@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".MainActivity" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbarhome"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageButton
+        android:id="@+id/imghome"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/DescHome"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="@+id/toolbarhome"
+        app:layout_constraintStart_toStartOf="@+id/toolbarhome"
+        app:srcCompat="@drawable/home"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
+
+    <ImageView
+        android:id="@+id/imglinhahome"
+        android:layout_width="50dp"
+        android:layout_height="5dp"
+        android:contentDescription="@string/DescLinha"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imghome"
+        app:layout_constraintStart_toStartOf="@+id/imghome"
+        app:srcCompat="@drawable/linhabranca" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

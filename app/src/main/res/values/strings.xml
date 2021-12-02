@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">DixTech</string>
+    <string name="madeby">MADE BY</string>
+
+    <string name="DescHome">Botão home</string>
+    <string name="DescLinha">Uma linha para facilitar a navegação</string>
+    <string name="DescLogo">Logo/Nome da nossa empresa</string>
+    <string name="DescMadeBy">Informa que o app foi feito por nossa empresa</string>
+
+</resources>
