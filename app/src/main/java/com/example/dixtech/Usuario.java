@@ -7,31 +7,27 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 
-public class MainActivity extends AppCompatActivity {
+public class Usuario extends AppCompatActivity {
 
-ImageButton btnuser;
+    ImageButton btnhome;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_usuario);
 
         getSupportActionBar().hide();
 
-        btnuser = findViewById(R.id.btnuserhome);
+        btnhome = findViewById(R.id.btnhomeuser);
 
 
-        btnuser.setOnClickListener(new View.OnClickListener() {
+        btnhome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
 
-                Intent user = new Intent(getApplicationContext(), Usuario.class);
-                startActivity(user);
+                Intent home = new Intent(getApplicationContext(), MainActivity.class);
+                startActivity(home);
             }
         });
-
-
     }
-
-
 }

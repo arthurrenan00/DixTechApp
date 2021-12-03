@@ -5,10 +5,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/white"
-    tools:context=".MainActivity" >
+    tools:context=".Usuario">
+
+    <ImageView
+        android:id="@+id/imglogouser"
+        android:layout_width="120dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/DescLogo"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logoazulfull" />
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbarhome"
+        android:id="@+id/toolbaruser"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:background="?attr/colorPrimary"
@@ -19,43 +30,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <ImageButton
-        android:id="@+id/imghome"
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="40dp"
-        android:layout_marginBottom="10dp"
-        android:background="#00FFFFFF"
-        android:contentDescription="@string/DescHome"
-        android:scaleType="centerCrop"
-        app:layout_constraintBottom_toBottomOf="@+id/toolbarhome"
-        app:layout_constraintStart_toStartOf="@+id/toolbarhome"
-        app:srcCompat="@drawable/home"
-        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
-
-    <ImageView
-        android:id="@+id/imglinhahome"
-        android:layout_width="40dp"
-        android:layout_height="3dp"
-        android:contentDescription="@string/DescLinha"
-        android:scaleType="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="@+id/imghome"
-        app:layout_constraintStart_toStartOf="@+id/imghome"
-        app:srcCompat="@drawable/linhabranca" />
-
-    <ImageView
-        android:id="@+id/imglogohome"
-        android:layout_width="120dp"
-        android:layout_height="30dp"
-        android:layout_marginStart="10dp"
-        android:layout_marginTop="10dp"
-        android:contentDescription="@string/DescLogo"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/logoazulfull" />
-
-    <ImageButton
-        android:id="@+id/btnuserhome"
+        android:id="@+id/imguser"
         android:layout_width="30dp"
         android:layout_height="30dp"
         android:layout_marginEnd="40dp"
@@ -68,4 +43,28 @@
         app:srcCompat="@drawable/usuario"
         tools:ignore="TouchTargetSizeCheck" />
 
+    <ImageView
+        android:id="@+id/imglinhauser"
+        android:layout_width="40dp"
+        android:layout_height="3dp"
+        android:contentDescription="@string/DescLinha"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/imguser"
+        app:layout_constraintStart_toStartOf="@+id/imguser"
+        app:srcCompat="@drawable/linhabranca" />
+
+    <ImageButton
+        android:id="@+id/btnhomeuser"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginBottom="10dp"
+        android:background="#00FFFFFF"
+        android:contentDescription="@string/DescHome"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/home"
+        tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck" />
 </androidx.constraintlayout.widget.ConstraintLayout>
