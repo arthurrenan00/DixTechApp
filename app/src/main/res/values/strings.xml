@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">DixTech</string>
     <string name="madeby">MADE BY</string>
+    <string name="email">Email</string>
+    <string name="senha">Senha</string>
+    <string name="entrar">Entrar</string>
+    <string name="textCadastro">Crie uma conta clicando aqui</string>
 
     <string name="DescHome">Botão home</string>
     <string name="DescUser">Botão usuário</string>
