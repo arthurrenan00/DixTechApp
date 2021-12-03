@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.DixTech">
         <activity
+            android:name=".FormCadastro"
+            android:exported="false" />
+        <activity
             android:name=".FormLogin"
             android:exported="true" />
         <activity
