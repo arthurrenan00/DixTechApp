@@ -1,20 +1,23 @@
 <resources>
     <string name="app_name">DixTech</string>
-    <string name="madeby">MADE BY</string>
+    <string name="madeby">Made by</string>
     <string name="email">Email</string>
     <string name="senha">Senha</string>
     <string name="nome">Nome</string>
     <string name="entrar">Entrar</string>
     <string name="cadastro">Cadastre-se</string>
+    <string name="cadastrar">Cadastrar</string>
     <string name="textCadastro">Crie uma conta clicando aqui</string>
     <string name="textLogin">Já possui uma conta?\nFaça login clicando aqui</string>
-    <string name="cadastrar">Cadastrar</string>
+    <string name="deslogar">Sair da conta</string>
 
-    <string name="DescHome">Botão home</string>
-    <string name="DescUser">Botão usuário</string>
-    <string name="DescLinha">Uma linha para facilitar a navegação</string>
-    <string name="DescLogo">Logo/Nome da nossa empresa</string>
-    <string name="DescMadeBy">Informa que o app foi feito por nossa empresa</string>
+
+    <string name="descHome">Botão home</string>
+    <string name="descUser">Botão/imagem de usuário</string>
+    <string name="descLinha">Uma linha para facilitar a navegação</string>
+    <string name="descLogo">Logo/Nome da nossa empresa</string>
+    <string name="descMadeBy">Informa que o app foi feito por nossa empresa</string>
     <string name="descCadastro">Cadastro</string>
+    <string name="descEmail">Imagem representando email</string>
 
 </resources>
