@@ -13,12 +13,6 @@
         android:background="@color/blue_100"
         tools:context=".FormCadastro">
 
-<TextView
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="@color/blue_100"
-    tools:context=".FormCadastro"/>
-
         <TextView
             android:id="@+id/txtcadastrese"
             android:layout_width="wrap_content"
