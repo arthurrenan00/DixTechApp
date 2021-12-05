@@ -19,21 +19,21 @@
     android:background="@color/blue_100"
     tools:context=".FormCadastro"/>
 
-    <TextView
-        android:id="@+id/txtcadastrese"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="150dp"
-        android:text="@string/cadastro"
-        android:textColor="@color/white"
-        android:textSize="35sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <TextView
+            android:id="@+id/txtcadastrese"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="@string/cadastro"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
     <View
         android:id="@+id/cadastroComponents"
-        style="@style/ContainerComponents"
+        style="@style/CadastroComponents"
         android:background="@drawable/edit_text"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -49,6 +49,54 @@
         app:layout_constraintStart_toStartOf="@id/cadastroComponents"
         app:layout_constraintTop_toTopOf="@id/cadastroComponents" />
 
+
+        <EditText
+            android:id="@+id/editcpf"
+            style="@style/Edit_Text"
+            android:hint="@string/cpf"
+            android:inputType="number"
+            android:textColor="@color/grey100"
+            android:textColorHint="@color/grey200"
+            app:layout_constraintEnd_toEndOf="@id/cadastroComponents"
+            app:layout_constraintStart_toStartOf="@id/cadastroComponents"
+            app:layout_constraintTop_toBottomOf="@id/editnomecad" />
+
+
+        <EditText
+            android:id="@+id/edittelefone"
+            style="@style/Edit_Text"
+            android:drawableEnd="@drawable/ic_phone"
+            android:hint="@string/telefone"
+            android:inputType="phone"
+            android:textColor="@color/grey100"
+            android:textColorHint="@color/grey200"
+            app:layout_constraintEnd_toEndOf="@id/cadastroComponents"
+            app:layout_constraintStart_toStartOf="@id/cadastroComponents"
+            app:layout_constraintTop_toBottomOf="@id/editcpf" />
+
+        <EditText
+            android:id="@+id/editdatanasc"
+            style="@style/Edit_Text"
+            android:drawableEnd="@drawable/ic_cake"
+            android:hint="@string/dataNasc"
+            android:inputType="phone"
+            android:textColor="@color/grey100"
+            android:textColorHint="@color/grey200"
+            app:layout_constraintEnd_toEndOf="@id/cadastroComponents"
+            app:layout_constraintStart_toStartOf="@id/cadastroComponents"
+            app:layout_constraintTop_toBottomOf="@id/edittelefone" />
+
+        <EditText
+            android:id="@+id/editcargo"
+            style="@style/Edit_Text"
+            android:drawableEnd="@drawable/ic_cargo"
+            android:hint="@string/cargo"
+            android:textColor="@color/grey100"
+            android:textColorHint="@color/grey200"
+            app:layout_constraintEnd_toEndOf="@id/cadastroComponents"
+            app:layout_constraintStart_toStartOf="@id/cadastroComponents"
+            app:layout_constraintTop_toBottomOf="@id/editdatanasc" />
+
     <EditText
         android:id="@+id/editemailcad"
         style="@style/Edit_Text"
@@ -59,7 +107,8 @@
         android:textColorHint="@color/grey200"
         app:layout_constraintEnd_toEndOf="@id/cadastroComponents"
         app:layout_constraintStart_toStartOf="@id/cadastroComponents"
-        app:layout_constraintTop_toBottomOf="@id/editnomecad" />
+        app:layout_constraintTop_toBottomOf="@id/editcargo" />
+
 
     <EditText
         android:id="@+id/editsenhacad"
@@ -72,6 +121,7 @@
         app:layout_constraintEnd_toEndOf="@id/cadastroComponents"
         app:layout_constraintStart_toStartOf="@id/cadastroComponents"
         app:layout_constraintTop_toBottomOf="@id/editemailcad" />
+
 
     <Button
         android:id="@+id/btncadastro"
@@ -91,21 +141,24 @@
         app:layout_constraintStart_toStartOf="@+id/cadastroComponents"
         app:layout_constraintTop_toBottomOf="@+id/cadastroComponents" />
 
-    <TextView
-        android:id="@+id/txttelalogin"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="40dp"
-        android:text="@string/textLogin"
-        android:textColor="@color/white"
-        android:textAlignment="center"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="@+id/cadastroComponents"
-        app:layout_constraintStart_toStartOf="@+id/cadastroComponents"
-        app:layout_constraintTop_toBottomOf="@id/btncadastro" />
+        <TextView
+            android:id="@+id/txttelalogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="120dp"
+            android:text="@string/textLogin"
+            android:textAlignment="center"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cadastroComponents"
+            app:layout_constraintStart_toStartOf="@+id/cadastroComponents"
+            app:layout_constraintTop_toBottomOf="@id/btncadastro"
+            app:layout_constraintVertical_bias="0.0" />
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </androidx.core.widget.NestedScrollView>

@@ -4,6 +4,10 @@
     <string name="email">Email</string>
     <string name="senha">Senha</string>
     <string name="nome">Nome</string>
+    <string name="cargo">Cargo</string>
+    <string name="dataNasc">Data de Nascimento</string>
+    <string name="telefone">Telefone</string>
+    <string name="cpf">CPF</string>
     <string name="entrar">Entrar</string>
     <string name="cadastro">Cadastre-se</string>
     <string name="cadastrar">Cadastrar</string>

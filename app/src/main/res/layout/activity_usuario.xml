@@ -90,6 +90,30 @@
         app:layout_constraintStart_toStartOf="@+id/txtnmUsuario"
         app:layout_constraintTop_toTopOf="@+id/iconeEmail" />
 
+    <ImageView
+        android:id="@+id/iconeCargo"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:src="@drawable/ic_cargoescuro"
+        android:layout_marginTop="25dp"
+        android:contentDescription="@string/descEmail"
+        app:layout_constraintTop_toBottomOf="@+id/iconeEmail"
+        app:layout_constraintStart_toStartOf="@id/iconeUser"
+        app:layout_constraintEnd_toEndOf="@id/iconeUser"
+        />
+
+    <TextView
+        android:id="@+id/txtcargoUsuario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Giuyffhuf"
+        android:textColor="@color/grey100"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@+id/iconeCargo"
+        app:layout_constraintStart_toStartOf="@+id/txtnmUsuario"
+        app:layout_constraintTop_toTopOf="@+id/iconeCargo" />
+
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -104,7 +128,7 @@
         app:cornerRadius="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/iconeEmail" />
+        app:layout_constraintTop_toBottomOf="@+id/iconeCargo" />
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbaruser"
