@@ -39,6 +39,8 @@
         android:hint="@string/nome"
         android:textColor="@color/grey100"
         android:textColorHint="@color/grey200"
+        android:inputType="text"
+        android:autofillHints=""
         app:layout_constraintEnd_toEndOf="@id/cadastroComponents"
         app:layout_constraintStart_toStartOf="@id/cadastroComponents"
         app:layout_constraintTop_toTopOf="@id/cadastroComponents" />
@@ -51,6 +53,7 @@
             android:inputType="number"
             android:textColor="@color/grey100"
             android:textColorHint="@color/grey200"
+            android:autofillHints=""
             app:layout_constraintEnd_toEndOf="@id/cadastroComponents"
             app:layout_constraintStart_toStartOf="@id/cadastroComponents"
             app:layout_constraintTop_toBottomOf="@id/editnomecad" />
@@ -66,7 +69,8 @@
             android:textColorHint="@color/grey200"
             app:layout_constraintEnd_toEndOf="@id/cadastroComponents"
             app:layout_constraintStart_toStartOf="@id/cadastroComponents"
-            app:layout_constraintTop_toBottomOf="@id/editcpf" />
+            app:layout_constraintTop_toBottomOf="@id/editcpf"
+            android:autofillHints="" />
 
         <EditText
             android:id="@+id/editdatanasc"
@@ -76,6 +80,7 @@
             android:inputType="phone"
             android:textColor="@color/grey100"
             android:textColorHint="@color/grey200"
+            android:autofillHints=""
             app:layout_constraintEnd_toEndOf="@id/cadastroComponents"
             app:layout_constraintStart_toStartOf="@id/cadastroComponents"
             app:layout_constraintTop_toBottomOf="@id/edittelefone" />
@@ -87,6 +92,8 @@
             android:hint="@string/cargo"
             android:textColor="@color/grey100"
             android:textColorHint="@color/grey200"
+            android:inputType="text"
+            android:autofillHints=""
             app:layout_constraintEnd_toEndOf="@id/cadastroComponents"
             app:layout_constraintStart_toStartOf="@id/cadastroComponents"
             app:layout_constraintTop_toBottomOf="@id/editdatanasc" />
@@ -99,6 +106,7 @@
         android:inputType="textEmailAddress"
         android:textColor="@color/grey100"
         android:textColorHint="@color/grey200"
+        android:autofillHints=""
         app:layout_constraintEnd_toEndOf="@id/cadastroComponents"
         app:layout_constraintStart_toStartOf="@id/cadastroComponents"
         app:layout_constraintTop_toBottomOf="@id/editcargo" />
@@ -112,6 +120,7 @@
         android:inputType="textPassword"
         android:textColor="@color/grey100"
         android:textColorHint="@color/grey200"
+        android:autofillHints=""
         app:layout_constraintEnd_toEndOf="@id/cadastroComponents"
         app:layout_constraintStart_toStartOf="@id/cadastroComponents"
         app:layout_constraintTop_toBottomOf="@id/editemailcad" />

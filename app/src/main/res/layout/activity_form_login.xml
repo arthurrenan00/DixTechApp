@@ -40,6 +40,7 @@
         android:inputType="textEmailAddress"
         android:textColor="@color/grey100"
         android:textColorHint="@color/grey200"
+        android:autofillHints=""
         app:layout_constraintEnd_toEndOf="@id/containerComponents"
         app:layout_constraintStart_toStartOf="@id/containerComponents"
         app:layout_constraintTop_toTopOf="@id/containerComponents" />
@@ -48,11 +49,12 @@
         android:id="@+id/editsenha"
         style="@style/Edit_Text"
         android:layout_marginTop="16dp"
-        android:drawableRight="@drawable/ic_lock"
+        android:drawableEnd="@drawable/ic_lock"
         android:hint="@string/senha"
         android:inputType="textPassword"
         android:textColor="@color/grey100"
         android:textColorHint="@color/grey200"
+        android:autofillHints=""
         app:layout_constraintEnd_toEndOf="@id/containerComponents"
         app:layout_constraintStart_toStartOf="@id/containerComponents"
         app:layout_constraintTop_toBottomOf="@id/editemail" />
